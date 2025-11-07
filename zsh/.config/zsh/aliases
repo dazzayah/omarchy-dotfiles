@@ -1,0 +1,42 @@
+# -----------------------------
+# File: ~/.config/zsh/aliases
+# -----------------------------
+
+# --- Environment Variables ---
+export EDITOR="nvim" # Set default editors
+export SUDO_EDITOR="$EDITOR"
+export BAT_THEME=ansi
+
+# --- Aliases ---
+
+# File System (eza)
+if command -v eza &> /dev/null; then
+  alias ls='eza -lh --group-directories-first --icons=auto'
+  alias lsa='ls -a'
+  alias lt='eza --tree --level=2 --long --icons --git'
+  alias lta='lt -a'
+fi
+
+# FZF
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+# Zoxide (uses 'zd' function)
+alias cd="zd"
+
+# Directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Tools
+alias d='docker'
+alias r='rails'
+
+# Git
+# alias g='git'
+# alias gcm='git commit -m'
+# alias gcam='git commit -a -m'
+# alias gcad='git commit -a --amend'
+
+# Compression
+alias decompress="tar -xzf"

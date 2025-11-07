@@ -1,0 +1,4 @@
+source ~/.config/zsh/options
+source ~/.config/zsh/init
+source ~/.config/zsh/functions
+source ~/.config/zsh/aliases

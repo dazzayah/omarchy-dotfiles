@@ -1,0 +1,25 @@
+# --------------------------
+# File: ~/.config/zsh/init
+# --------------------------
+
+# Mise (env manager)
+if command -v mise &> /dev/null; then
+  eval "$(mise activate zsh)"
+fi
+
+# Zoxide (must load before functions/aliases)
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init zsh)"
+fi
+
+# FZF (Fuzzy Finder)
+if command -v fzf &> /dev/null; then
+  if [[ -f /usr/share/fzf/completion.zsh ]]; then
+    source /usr/share/fzf/completion.zsh
+  fi
+  if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
+    source /usr/share/fzf/key-bindings.zsh
+  fi
+fi
+
+# OMZ handles zsh-autosuggestions and zsh-syntax-highlighting

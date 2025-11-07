@@ -1,0 +1,26 @@
+# -----------------------------
+# File: ~/.config/zsh/options
+# -----------------------------
+
+# --- 1. Shell Options (setopt) ---
+setopt autocd             # 'd' is aliased to 'cd d'
+setopt hist_ignore_dups   # Don't save duplicate history entries
+setopt share_history      # Share history between sessions
+setopt correct            # Auto-correct typos
+setopt notify             # Notify on background job completion
+
+# --- 2. History Settings ---
+HISTFILE=~/.zsh_history
+HISTSIZE=32768
+SAVEHIST=$HISTSIZE        # Zsh equivalent of HISTFILESIZE
+
+# --- 3. Completion System ---
+# Init Zsh completion system
+autoload -Uz compinit
+compinit
+
+# --- 4. Keybindings ---
+bindkey -e  # Emacs-style keybindings
+# History search keybindings
+bindkey '\e[A' history-search-backward  # Up arrow
+bindkey '\e[B' history-search-forward   # Down arrow
