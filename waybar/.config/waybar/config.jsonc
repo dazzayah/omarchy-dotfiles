@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 10,
   "height": 36,
-  "width": 900,
+  "width": 1260,
   "margin": 5,
   "margin-top": 10,
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
@@ -39,7 +39,9 @@
       "3": [],
       "4": [],
       "5": [],
-      "6": []
+      "6": [],
+      "7": [],
+      "8": []
     }
   },
   "custom/omarchy": {
