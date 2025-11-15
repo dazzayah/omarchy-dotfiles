@@ -1,0 +1,10 @@
+{
+  "custom/system_update": {
+    "exec": "omarchy-update-available",
+    "format": "", 
+    "interval": 3600,
+    "signal": 7, 
+    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
+    "tooltip-format": "Omarchy update available" 
+  },
+}

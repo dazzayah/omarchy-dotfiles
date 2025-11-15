@@ -1,6 +1,6 @@
 include=~/.local/share/omarchy/default/mako/core.ini
 
 text-color=#c0caf5
-border-color=#33ccff
+border-color=#C0CAEE
 background-color=#1a1b26
 border-radius=10

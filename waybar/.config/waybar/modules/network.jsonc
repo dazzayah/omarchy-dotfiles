@@ -1,0 +1,20 @@
+{
+"network": {
+    // Iconos para la intensidad de la señal Wi-Fi (0% a 100%)
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    
+    // Formato por defecto (usará el icono de Wi-Fi o Ethernet)
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰀂", // Icono para conexión por cable
+    "format-disconnected": "󰤮", // Icono para 'desconectado'
+    
+    // Tooltips (lo que ves al pasar el ratón)
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "Ethernet\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    
+    "interval": 3,
+    "on-click": "omarchy-launch-wifi"
+  },
+}
